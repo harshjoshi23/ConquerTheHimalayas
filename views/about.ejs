@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+  <%- include('templates/head') %>
+  <link rel="stylesheet" href="/css/about.css">
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#myCarousel").on("slide.bs.carousel", function(e) {
+        var $e = $(e.relatedTarget);
+        var idx = $e.index();
+        var itemsPerSlide = 3;
+        var totalItems = $(".carousel-item").length;
+
+        if (idx >= totalItems - (itemsPerSlide - 1)) {
+          var it = itemsPerSlide - (totalItems - idx);
+          for (var i = 0; i < it; i++) {
+            // append slides to end
+            if (e.direction == "left") {
+              $(".carousel-item")
+                .eq(i)
+                .appendTo(".carousel-inner");
+            } else {
+              $(".carousel-item")
+                .eq(0)
+                .appendTo($(this).find(".carousel-inner"));
+            }
+          }
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <%- include('templates/nav') %>
+  <div class="ovr w-100">
+
+    <section class="sec1 ovr w-100 container-fluid">
+      <div class="text-center">
+        <h1 class="display-2 h2"><b>Conquer the Himalayas</b></h1>
+      </div>
+    </section>
+
+    <div class="py-5 my-5 no-margin subs" style="background-color:#266bff">
+      <form class="" action="#" method="post" style="background-color:#266bff">
+        <div class="row w-100 no-margin" style="background-color:#266bff">
+          <div class="col-md-4">
+            <p class="lead p-3 pl-5" style="font-size:150%;"><b>Subscribe for trek updates</b></p>
+          </div>
+          <div class="col-md-4">
+            <input type="email" name="email" class="form-control p-3" value="" placeholder="Enter your email">
+          </div>
+          <div class="col-md-4">
+            <button type="submit" name="button" class="form-control p-2 mb-1 btn text-light" style="background-color:#004bed;">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+  <div id="myCarousel" class="carousel ovr w-100 slide sec2 py-5" data-ride="carousel">
+    <div class="carousel-inner row w-100 mx-auto">
+      <div class="carousel-item col-md-4 active">
+        <div class="card testimonial-card">
+            <div class="card-up sunny-morning-gradient" style="height:12rem;border-radius: 0 4rem;">
+            </div>
+            <div class="avatar mx-auto">
+              <img src="../img/Members/vardhan.jpg" class="rounded-circle mx-auto card-img-overlay img-responsive" style="height:200px" alt="Example photo">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title mt-1 pt-3 pl-3">Harshvardhan Joshi</h4>
+                <hr>
+                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci.</p>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-4">
+        <div class="card testimonial-card">
+            <div class="card-up aqua-gradient" style="height:12rem;border-radius: 0 4rem;">
+            </div>
+            <div class="avatar mx-auto">
+              <img src="../img/Members/mridul.jpg" class="rounded-circle mx-auto card-img-overlay img-responsive" style="height:200px" alt="Example photo">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title mt-1 pt-3 pl-3">Mridul Bajpaii</h4>
+                <hr>
+                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci.</p>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-4">
+        <div class="card testimonial-card">
+            <div class="card-up blue-gradient" style="height:12rem;border-radius: 0 4rem;">
+            </div>
+            <div class="avatar mx-auto">
+              <img src="../img/Members/zapro.png" class="rounded-circle mx-auto card-img-overlay img-responsive" style="height:200px" alt="Example photo">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title mt-1 pt-3 pl-3">Hariom Chaurisia</h4>
+                <hr>
+                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci.</p>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-4">
+        <div class="card testimonial-card">
+            <div class="card-up purple-gradient" style="height:12rem;border-radius: 0 4rem;">
+            </div>
+            <div class="avatar mx-auto">
+              <img src="../img/Members/alankrita.jpg" class="rounded-circle mx-auto card-img-overlay img-responsive" style="height:200px" alt="Example photo">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title mt-1 pt-3 pl-3">Alankrita Singh</h4>
+                <hr>
+                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci.</p>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-4">
+        <div class="card testimonial-card">
+            <div class="card-up near-moon-gradient" style="height:12rem;border-radius: 0 4rem;">
+            </div>
+            <div class="avatar mx-auto">
+              <img src="../img/Members/manav.jpeg" class="rounded-circle mx-auto card-img-overlay img-responsive" style="height:200px" alt="Example photo">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title mt-1 pt-3 pl-3">Manav </h4>
+                <hr>
+                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci.</p>
+            </div>
+        </div>
+      </div>
+<!---
+      <div class="carousel-item col-md-4">
+        <div class="card testimonial-card">
+            <div class="card-up morpheus-den-gradient" style="height:12rem;border-radius: 0 4rem;">
+            </div>
+            <div class="avatar mx-auto">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="rounded-circle mx-auto card-img-overlay img-responsive" style="height:200px" alt="Example photo">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title mt-1 pt-3 pl-3">John Doe</h4>
+                <hr>
+                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci.</p>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+--->
+
+  <section class="py-5 ovr rare-wind-gradient w-100">
+    <%- include('templates/fill') %>
+  </section>
+
+    <section class="sec3 container-fluid ovr w-100 py-5">
+      <div class="container">
+      <h1 class="display-2 text-center py-2 pb-4 text-light"><b>Our Values</b></h1>
+      <div class="row">
+      <div class="col-md-4">
+      <div class="card cloudy-knoxville-gradient text-center">
+        <div class="card-header heavy-rain-gradient mb-3">COMMITMENT</div>
+      <div class="card-body">
+        <p class="card-text">We endeavor to always deliver what we promise you. Keeping our promises and committing a great service is our utmost priority even if it means to tell you what's not in your best interest.</p>
+      </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card text-center cloudy-knoxville-gradient">
+        <div class="card-header heavy-rain-gradient mb-3">RESPONSIVENESS </div>
+      <div class="card-body">
+        <p class="card-text">Customers are our lifeblood. Without them, we're nothing. Hence it is our priority to solve their queries with quick responses and provide them with the best of the services considering their requirements.</p>
+      </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card text-center cloudy-knoxville-gradient">
+      <div class="card-header heavy-rain-gradient mb-3">ACCOUNTABILITY </div>
+      <div class="card-body">
+        <p class="card-text">Assuming responsibility for our actions is one of the important value amongst our organisation. We tend to look into your requirements, do research and then strive to deliver you with services of your interest.
+  </p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+  </div>
+  <%- include('templates/foot') %>
+      </div>
+    </div>
+</body>
+</html>

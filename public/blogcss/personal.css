@@ -1,0 +1,50 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+#navbarNav .navbar-nav .active{
+  border-bottom: 3px solid white;
+}
+
+/* Yaha se where to go ka */
+#where{
+    background-color: #3467eb;
+}
+
+/* Yaha se header ka bg-color change hoga */
+header nav{
+  background-color: black;
+}
+
+.nava{
+  border-bottom: 3px solid transparent;
+}
+
+.nava:hover{
+  border-bottom: 3px solid white;
+}
+
+.cf{
+  background-color: #ababab;
+}
+
+.parallax1 {
+  background-image: url("../img/Blogimg/bag%20pack.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.card{
+  border-radius: 1rem 10rem 1rem 6rem;
+}
+
+
+
+.foot{
+  background-color: #000;
+}

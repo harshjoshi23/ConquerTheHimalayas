@@ -1,0 +1,224 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+#navbarNav .navbar-nav .active{
+  border-bottom: 3px solid white;
+}
+
+/* Yaha se where to go ka */
+#where{
+    background-color: #3467eb;
+}
+
+/* Yaha se header ka bg-color change hoga */
+header nav{
+  background-color: black;
+}
+
+header nav ul li:nth-child(1){
+  border-bottom: 3px solid white;
+  font-weight: 600;
+}
+
+.nava{
+  border-bottom: 3px solid transparent;
+}
+
+.nava:hover{
+  border-bottom: 3px solid white;
+}
+
+.ovr{
+  overflow:hidden;
+}
+
+.img1{
+  width: 100%;
+  height: 100vh;
+}
+
+.dest{
+  border-left: 3px solid transparent;
+}
+
+.dest:hover{
+  border-left: 3px solid firebrick;
+}
+
+.img2{
+  width: 100%;
+  height: 100vh;
+}
+.img3{
+  width: 100%;
+  height: 100vh;
+}
+
+.ab{
+  position: relative;
+  margin-top: -3rem;
+}
+
+.thumb img{
+  width:100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+}
+
+.content{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    z-index: 7;
+    text-decoration: none;
+  }
+  .content p{
+        margin-bottom: 0;
+        font-size: 22px;
+        color: #fff;
+        font-weight: 400;
+        font-family: $font2;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+  }
+  .content p a{
+      display: inline-block;
+      background:#1EC6B6;
+      font-size: 12px;
+      border-radius: 30px;
+      font-weight: 400;
+      padding: 0px 12px;
+      height: 25px;
+      line-height: 25px;
+      color: #fff;
+      margin-left: 10px;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      text-decoration: none;
+
+}
+
+.single_destination:hover{
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+  color: #FF4A52;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
+  background-color: #FF4A52;
+  color: #fff;
+  -webkit-box-shadow: 3px 3px 36px -1px #000000;
+  box-shadow: 3px 3px 36px -1px #000000;
+}
+.content p:hover{
+        color: #FF4A52;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        text-decoration: none;
+
+      }
+.content p a:hover{
+    background: #FF4A52;
+    text-decoration: none;
+    color: #fff;
+}
+
+.single_place{
+  background: #ebebeb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.crd{
+  color: firebrick!important;
+}
+
+#crdde{
+  background-color: #ccc;
+}
+
+.fa:hover{
+  color: firebrick!important;
+}
+
+.recent_trip_area {
+  padding-top: 150px;
+  padding-bottom: 120px; }
+  .recent_trip_area .single_trip {
+    margin-bottom: 30px; }
+    .recent_trip_area .single_trip .thumb {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      overflow: hidden; }
+      .recent_trip_area .single_trip .thumb img {
+        width: 100%;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; }
+    .recent_trip_area .single_trip .info {
+      padding-top: 16px; }
+      .recent_trip_area .single_trip .info .date span {
+        font-size: 14px;
+        font-weight: 400;
+        color: #7A838B;
+        display: block; }
+      .recent_trip_area .single_trip .info a h3 {
+        color: #040E27;
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-top: 10px;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+    .recent_trip_area .single_trip:hover .info a h3 {
+      color: #FF4A52;
+}
+
+.myCard{
+  width:100%;
+}
+
+.myCard:hover{
+  -webkit-box-shadow: 5px 5px 50px 5px rgba(255,255,255,0.66);
+  -moz-box-shadow: 5px 5px 50px 5px rgba(255,255,255,0.66);
+  box-shadow: 5px 5px 50px 5px rgba(255,255,255,0.66);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+  width: 100%;
+}
+
+.foot{
+  background-color: #000;
+}
